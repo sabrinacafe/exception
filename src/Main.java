@@ -4,7 +4,12 @@ public class Main {
         int a = 4;
         int b = 0;
         int resultado = 0;
-        resultado = divisao (a, b);
+        try {
+            resultado = divisao (a, b);
+
+        } catch (Exception e) {
+            System.out.println("Erro!");
+        }
 
         System.out.println(resultado);
     }
